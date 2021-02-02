@@ -76,8 +76,8 @@ class Schematic {
                 for ($y = 0; $y < $height; ++$y) {
                     $index = $y * $wl + $zwx;
 
-                    $id = ord($blockIds{$index});
-                    $damage = ord($blockDatas{$index});
+                    $id = ord($blockIds[$index]);
+                    $damage = ord($blockDatas[$index]);
 
                     if ($replace_pc_blocks && isset(Utils::REPLACEMENTS[$id])) {
                         [$new_id, $new_damage] = Utils::REPLACEMENTS[$id][$damage] ?? Utils::REPLACEMENTS[$id][-1] ?? [$id, $damage];
