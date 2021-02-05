@@ -14,7 +14,7 @@ commands:
     permission: worldstyler.set
   /replace:
     permission: worldstyler.replace
-    alises: ["/rpl"]
+    aliases: ["/rpl"]
   /schem:
     permission: worldstyler.schem
   /copy:
